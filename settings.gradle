@@ -1,0 +1,4 @@
+include ':client'
+include ':practice'
+include ':app'
+rootProject.name = "KeepLiveService"
