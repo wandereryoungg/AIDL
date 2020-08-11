@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/myclient" />
+            <option value="$PROJECT_DIR$/myserver" />
             <option value="$PROJECT_DIR$/practice" />
           </set>
         </option>

@@ -1,3 +1,5 @@
+include ':myserver'
+include ':myclient'
 include ':client'
 include ':practice'
 include ':app'
