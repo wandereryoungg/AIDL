@@ -26,9 +26,11 @@ public class MyService extends Service {
         protected boolean onTransact(int code, @NonNull Parcel data, @Nullable Parcel reply, int flags) throws RemoteException {
             switch (code) {
                 case ADD:
+                    data.enforceInterface("MyBinder");
                     int a = data.readInt();
                     int b = data.readInt();
-                    reply.writeInt(a + b);
+                    int c = a + b;
+                    reply.writeInt(c);
                     return true;
             }
             return super.onTransact(code, data, reply, flags);

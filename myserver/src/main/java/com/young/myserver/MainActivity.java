@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 Parcel data = Parcel.obtain();
                 Parcel reply = Parcel.obtain();
                 data.writeInterfaceToken("MyBinder");
-                data.writeInt(4);
+                data.writeInt(5);
                 data.writeInt(5);
                 try {
-                    mRemote.transact(0, data, reply, 0);
+                    mRemote.transact(1, data, reply, 0);
                     int add = reply.readInt();
                     Log.e("young", "add " + add);
                     data.recycle();
